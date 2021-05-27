@@ -1,0 +1,316 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int x,y;
+	     Console.WriteLine("Enter the x");
+		  x = Convert.ToInt32(Console.ReadLine());
+	     Console.WriteLine("Enter the y");
+		  y = Convert.ToInt32(Console.ReadLine());
+	     Console.WriteLine("sum is:"+(x+y));
+	     Console.WriteLine("subtraction is:"+(x-y));
+	     Console.WriteLine("Multiplication is:"+(x*y));
+	     Console.WriteLine("Division is:"+(x/y));
+		 Console.ReadLine();
+
+		
+	}
+}
+
+
+VOTING PROGRAM
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int age;
+		Console.WriteLine("Enter the age of the person");
+		age= Convert.ToInt32(Console.ReadLine());
+		if(age>=18)
+		{
+		  Console.WriteLine("Person is eligible for voting.");
+		}
+		else
+		{
+		 Console.WriteLine("You are not eligible");
+		}
+			Console.ReadLine();
+
+		
+		
+		
+
+		
+	}
+}
+
+
+
+
+VOTING (Elseif loops)
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int age;
+		Console.WriteLine("Enter the Age");
+		age= Convert.ToInt32(Console.ReadLine());
+		if(age<18)
+		{
+		  Console.WriteLine("Person Not eligible for voting");
+		}
+		else if(age>=18 && age<60)
+		{
+		 Console.WriteLine("Person can vote");
+		}
+		else
+		{
+		 Console.WriteLine("Person is a Senior Citizen");
+		}
+			Console.ReadLine();
+		
+
+		
+		
+		
+
+		
+	}
+}
+
+PROGRAM FOR LARGEST NUMBER
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int n1,n2,n3;
+		Console.WriteLine("Enter the n1");
+		n1= Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("Enter the n2");
+		n2= Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("Enter the n3");
+		n3= Convert.ToInt32(Console.ReadLine());
+
+		if(n1>n2 && n1>n3)
+		{
+		  Console.WriteLine("N1 is largest number");
+		}
+		else if(n2>n1 && n2>n3)
+		{
+		 Console.WriteLine("N2 is largest");
+		}
+		else
+		{
+		 Console.WriteLine("N3 is largest");
+		}
+			Console.ReadLine();
+	}
+}
+
+
+PROGRAM FOR PRINT 1 TO 5
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int num;
+		Console.WriteLine("Enter the num");
+		num= Convert.ToInt32(Console.ReadLine());
+
+		if(num== 1)
+		{
+		  Console.WriteLine("ONE");
+		}
+		else if(num==2)
+		{
+		 Console.WriteLine("TWO");
+		}
+		else if(num==3)
+		{
+		 Console.WriteLine("THREE");
+		}
+		else if(num==4)
+		{
+		Console.WriteLine("FOUR");
+		}
+		else if(num==5)
+		{
+		Console.WriteLine("FIVE");
+		}
+			Console.ReadLine();
+	}
+}
+
+
+
+PROGRAM FOR printing star:
+using System;
+public class Program
+{
+public static void Main()
+{
+int Number;
+Number = Convert.ToInt32(Console.ReadLine());
+for( int i=1;i<=Number;i++)
+{
+for(int j=1;j<=i;j++)
+{
+Console.Write(" * ");
+}
+Console.WriteLine();
+}
+Console.ReadLine();
+}
+}
+
+
+
+PROGRAM PATTERN
+
+using System;
+public class Program
+{
+public static void Main()
+{
+int n;
+n = Convert.ToInt32(Console.ReadLine());
+for(int i=1;i<=n;i++)  
+   {  
+       for(int j=1;j<= n-1;j++)  
+       {  
+           Console.Write(" ");  
+       }  
+       for(int k=1;k<=2*i-1;k++)  
+       {  
+         Console.Write("*");  
+       }  
+       n--;  
+     
+      Console.WriteLine(" ");  
+    }  	
+ }	
+}
+
+PROGRAM FOR PATTERN
+using System;
+public class Program
+{
+	public static void Main()
+	{
+		int i,j,k,n=5;
+ for( i=0;i<n;i++)  
+ {  
+   for( j=0;j<i;j++)  
+   {  
+       Console.Write(" ");  
+   }  
+   for(k=1;k<=n-i;k++)  
+   {  
+   Console.Write("*");  
+   }  
+	 Console.WriteLine();
+ }  
+for(i=1;i<n;i++)  
+{  
+  for(j=1;j<n-i;j++)  
+  {  
+   Console.Write(" ");  
+  }  
+  for(k=1;k<=i+1;k++)  
+  {  
+   Console.Write("*");  
+  }   
+			Console.WriteLine();
+			 }
+		    Console.ReadLine();
+	}
+}
+
+PROGRAM FOR ARRAY
+
+using System;
+                   
+public class Program
+{
+    public static void Main(string[] args)
+    {
+        int[] a=new int[10];
+        for(int i=0;i<a.Length;i++)
+        {
+           Console.WriteLine("enter value: " );
+           a[i]=Convert.ToInt32(Console.ReadLine());
+        }
+        foreach(var item in a)
+        {
+            if(item%2==0)
+            {
+                Console.WriteLine("Even:" +(item));
+            }
+            else
+            {
+                Console.WriteLine("odd:" +(item));
+               
+            }
+        }
+    }
+}
+
+PROGRAM FOR ARRAY
+int[] arr1 = new int[3];
+int[] Counter = new int[3];
+
+ int counter;
+//input values
+Console.WriteLine("Input elements");
+for (int i = 0; i < arr1.Length; i++)
+{
+arr1[i] = Convert.ToInt32(Console.ReadLine());
+Counter[i] = -1;
+}
+
+
+
+ for (int i = 0; i < arr1.Length; i++)
+{
+counter = 1;
+for (int j = i+1; j < arr1.Length; j++)
+{
+if(arr1[i]== arr1[j])
+{
+counter++;
+Counter[j] = 0;
+}
+}
+if (Counter[i] != 0)
+{
+Counter[i] = counter;
+}
+}
+
+
+ for (int i = 0; i < arr1.Length; i++)
+{
+if(Counter[i]!=0)
+{
+Console.WriteLine("{0} occurs {1}",arr1[i],Counter[i]);
+}
+}
+Console.ReadLine();
+
+
+
+
+
+
+
+
